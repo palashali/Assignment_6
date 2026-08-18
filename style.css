@@ -1,0 +1,628 @@
+/* =========================
+   General Styles
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172033;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e8eaf0;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #172033;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #6c4ce8;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-menu a {
+    color: #172033;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    color: #6c4ce8;
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+.buy-btn {
+    display: inline-block;
+    background-color: #6c4ce8;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: 2px solid #6c4ce8;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: #5535c7;
+    border-color: #5535c7;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   Hero
+========================= */
+
+
+.hero {
+    background-color: #f5f2ff;
+    padding: 90px 0;
+
+    background-image:
+        url("image/ebook-cover.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-text {
+    width: 55%;
+}
+
+.small-title,
+.section-label {
+    color: #6c4ce8;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    color: #172033;
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    color: #596174;
+    font-size: 18px;
+    max-width: 550px;
+    margin-bottom: 25px;
+}
+
+.price {
+    color: #172033;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.price strong {
+    color: #6c4ce8;
+    font-size: 32px;
+}
+
+.hero-image {
+    width: 40%;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 70%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 8px solid #ffffff;
+    box-shadow: 0 15px 40px rgba(50, 30, 100, 0.2);
+}
+
+.cover-area {
+    width: 40%;
+    text-align: center;
+}
+
+.cover-area img {
+    width: 280px;
+    height: 380px;
+    object-fit: cover;
+    border: 5px solid #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+} 
+
+
+
+
+/* =========================
+   About
+========================= */
+
+.about {
+    background-color: #ffffff;
+}
+
+.section-label {
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.about-content > div {
+    width: 50%;
+}
+
+.about-content p {
+    color: #596174;
+    margin-bottom: 18px;
+}
+
+.learn-box {
+    background-color: #f5f2ff;
+    padding: 30px;
+    border: 1px solid #e2dcff;
+    border-radius: 12px;
+}
+
+.learn-box h3 {
+    color: #172033;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.learn-box ul {
+    padding-left: 20px;
+}
+
+.learn-box li {
+    color: #596174;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   Features
+========================= */
+
+.features-section {
+    background-color: #f8f9fc;
+}
+
+.features {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.feature-card {
+    width: 33.33%;
+    background-color: #ffffff;
+    padding: 35px 25px;
+    text-align: center;
+    border: 1px solid #e5e7ed;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-color: #6c4ce8;
+}
+
+.feature-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: #687084;
+}
+
+
+/* =========================
+   Pricing
+========================= */
+
+.pricing {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.pricing-card {
+    width: 380px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 30px;
+    border: 2px solid #6c4ce8;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(50, 30, 100, 0.1);
+}
+
+.popular {
+    display: inline-block;
+    background-color: #ede8ff;
+    color: #6c4ce8;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.pricing-card h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.original-price {
+    color: #9ba1ae;
+    text-decoration: line-through;
+    font-size: 20px;
+}
+
+.discount-price {
+    color: #6c4ce8;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.save-text {
+    color: #4d9b68;
+    margin-bottom: 25px;
+}
+
+.pricing-btn {
+    width: 100%;
+}
+
+
+/* =========================
+   Reviews
+========================= */
+
+.reviews {
+    background-color: #f8f9fc;
+}
+
+.review-container {
+    display: flex;
+    gap: 25px;
+}
+
+.review-card {
+    width: 33.33%;
+    background-color: #ffffff;
+    padding: 25px;
+    border: 1px solid #e5e7ed;
+    border-radius: 10px;
+}
+
+.stars {
+    color: #f4b400;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.review-card p:not(.stars) {
+    color: #596174;
+    margin-bottom: 15px;
+}
+
+.review-card h4 {
+    color: #172033;
+}
+
+
+/* =========================
+   Order Form
+========================= */
+
+.order {
+    background-color: #f5f2ff;
+}
+
+.form-container {
+    width: 550px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 35px;
+    border: 1px solid #e1dded;
+    border-radius: 12px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #172033;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    height: 48px;
+    padding: 10px 14px;
+    background-color: #ffffff;
+    border: 1px solid #ccd0db;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #6c4ce8;
+}
+
+.submit-btn {
+    width: 100%;
+    font-size: 16px;
+}
+
+
+/* =========================
+   FAQ
+========================= */
+
+.faq {
+    background-color: #ffffff;
+}
+
+.faq-container {
+    width: 750px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+details {
+    border: 1px solid #e1e4eb;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 18px 20px;
+    background-color: #ffffff;
+}
+
+summary {
+    color: #172033;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+details p {
+    color: #687084;
+    padding-top: 15px;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+.footer {
+    background-color: #172033;
+    color: #ffffff;
+    padding-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-content > div {
+    width: 33.33%;
+}
+
+.footer h3 {
+    color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.footer h4 {
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.footer p {
+    color: #b8bdc9;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: #c9c1ff;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #30384a;
+}
+
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 768px) {
+
+    .header {
+        position: static;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .nav-menu {
+        gap: 18px;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-content > div {
+        width: 100%;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature-card {
+        width: 100%;
+    }
+
+    .review-container {
+        flex-direction: column;
+    }
+
+    .review-card {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-content > div {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
